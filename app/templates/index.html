@@ -1,0 +1,8 @@
+{% extends 'base.html' %} 
+{% import 'bootstrap/form.html' %}
+
+{% block app_content %}
+    <h1>{{ 'Hi, %(username)s!', username=current_user.username}}</h1>
+
+
+{% endblock %} 

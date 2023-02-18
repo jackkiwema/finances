@@ -1,0 +1,12 @@
+__pycache__
+.pytest_cache
+logs
+venv
+.env
+.flaskenv
+instance
+app.db
+package.json
+messages.pot
+*.mo
+package.json
