@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-    config.vm.box = "ubuntu/focal64"
+    config.vm.box = "ubuntu/jammy64"
     config.vm.hostname = "jackkiwema.com"
     config.vm.network "forwarded_port", adapter: 2, guest: 80, host: 8080, host_ip: "0.0.0.0"
     config.vm.network "public_network", adapter: 2, ip: "192.168.0.50", bridge: "enp0s25", hostname: true
