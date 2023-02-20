@@ -33,3 +33,11 @@ Subject: $Mail Subject
 Content: $Mail Content
 ctrl d
 ```
+
+* To deploy updates 
+```
+git pull
+sudo supervisorctl stop finance
+flask db upgrade 
+sudo supervisorctl start finance
+```
