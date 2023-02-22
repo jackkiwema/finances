@@ -10,3 +10,5 @@ package.json
 messages.pot
 *.mo
 package.json
+finance.db
+
