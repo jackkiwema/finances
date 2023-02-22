@@ -17,7 +17,7 @@ $ source venv/bin/activate
 
 > **Step #3** - Install dependencies
 ```bash
-$ mv env_example .env
+$ mv app/deployment/install/env_example .env
 ```
 
 > **Step #4** - Create Tables
