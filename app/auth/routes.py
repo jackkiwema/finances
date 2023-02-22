@@ -4,9 +4,9 @@ from flask_login import current_user, login_user, logout_user
 from datetime import datetime
 from app import db
 from app.auth import bp
-from app.models import User
 from app.auth.forms import LoginForm, RegistrationForm, ResetPasswordRequestForm, ResetPasswordForm
 from app.auth.email import send_password_reset_email
+from app.models import User
 
 
 @bp.route('login', methods=['GET', 'POST'])
@@ -15,7 +15,7 @@ def login():
         return redirect(url_for('index'))
     form = LoginForm()
     if form.validate_on_submit():
-        user = User.query.filter_by(username=username.data).first()
+        user = User.query.filter_by(username=form.username.data).first()
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
             return redirect(url_for('auth.login'))
