@@ -8,7 +8,7 @@ from app.auth.forms import LoginForm, RegistrationForm, ResetPasswordRequestForm
 from app.auth.email import send_password_reset_email
 from app.models import User
 
-
+# Login user
 @bp.route('login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:

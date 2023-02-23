@@ -37,11 +37,21 @@ $ # Access the app in browser: http://127.0.0.1:5000/
     |
     |--app/
     |   |-- auth/
+    |   |     |-- __init__.py
     |   |     |-- email.py
     |   |     |-- forms.py
     |   |     |-- routes.py
     |   |
     |   |-- main/
+    |   |     |-- __init__.py
+    |   |     |-- forms.py
+    |   |     |-- routes.py
+    |   |
+    |   |-- errors/
+    |   |     |--__init__.py
+    |   |     |-- handlers.py
+    |   |
+    |   |-- static/
     |   |
     |   |-- templates/
     |   |
@@ -63,3 +73,5 @@ $ # Access the app in browser: http://127.0.0.1:5000/
     |-- requirements.txt
     |
     |-- **********************************************
+
+```

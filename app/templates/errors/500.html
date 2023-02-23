@@ -1,0 +1,9 @@
+{% extends 'base.html' %} 
+
+{% block app_content %} 
+    <h1>An unexpected error has occured</h1>
+    <p>The Administrator has been notified. Apologies for the inconvenience</p>
+    <p>Raise <a href="https://github.com/jackkiwema/finances/issues">issue</a></p>
+    <p><a href="{{ url_for('main.index') }}">Back</a></p>
+
+{% endblock %} 
